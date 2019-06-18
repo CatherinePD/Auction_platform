@@ -1,0 +1,131 @@
+﻿<Window x:Class="Auction.AddLotWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Auction"
+        xmlns:vm="clr-namespace:Auction.ViewModels"
+        mc:Ignorable="d"
+        Title="AddLotWindow" Height="600" Width="650" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="OnMouseLeftButtonDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition />
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Rectangle RadiusY="15" RadiusX="15" Grid.RowSpan="3" Fill="#FFF3EAF9" ></Rectangle>
+        <Button x:Name="ButtonClose" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionAccentButton}" HorizontalAlignment="Right"  Foreground="Black" Margin="0,10,12,0" Height="25" Width="25" Background="{x:Null}" BorderBrush="{x:Null}"  Click="buttonClose_Click">
+            <materialDesign:PackIcon Kind="Close" Width="25" Height="25"  />
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Text="{Binding Caption}" FontSize="25" FontFamily="/Auction;component/Fonts/#ZektonLt Exp" Padding="0,23,0,0"></TextBlock>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel >
+                <StackPanel Orientation="Horizontal">
+                    <Label FontSize="16" Margin="0,3,0,0" >Название:</Label>
+                    <TextBox Margin="10,0,0,0" AcceptsReturn="True" TextWrapping="Wrap" Width="400" MaxWidth="700" materialDesign:ValidationAssist.Background="Transparent">
+                        <TextBox.Text>
+                            <Binding Path="Title" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule></DataErrorValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <Label Padding="5,10,5,5" Foreground="Gray" >Не более 75 символов</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label FontSize="16">Категория:</Label>
+                    <ComboBox materialDesign:HintAssist.Hint="Выбрать" MinWidth="112" Margin="6,0,0,0" Background="#FFF3EAF9"
+                                  ItemsSource="{Binding Categories}" DisplayMemberPath="Name" materialDesign:ValidationAssist.Background="Transparent">
+                        <ComboBox.SelectedValue>
+                            <Binding Path="SelectedCategory">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule></DataErrorValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </ComboBox.SelectedValue>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel x:Name="PhotoAndButtonStackPanel">
+                    <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                        <Label FontSize="16">Фотографии:</Label>
+                        <Button x:Name="AddPhotoButton" Command="{Binding AddPhotoCommand}" Style="{DynamicResource MaterialDesignFlatButton}" BorderBrush="Purple" BorderThickness="1" Content="Добавить"></Button>
+                        <Label Padding="5,10,5,5" Foreground="Gray" >Первая фотография будет титульной</Label>
+                    </StackPanel>
+
+                    <ItemsControl ItemsSource="{Binding Photos}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Visibility="Visible" x:Name="PhotoStackPanel" Orientation="Horizontal" Margin="0,10,0,0"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <materialDesign:Badged BadgePlacementMode="TopRight" Margin="15, 5, 10, 5" BadgeBackground="Transparent">
+                                    <materialDesign:Badged.Badge>
+                                        <Button Width="20" Height="20" Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                                                Command="{Binding Path = DataContext.DeletePhotoCommand, RelativeSource = {RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}}"
+                                                CommandParameter="{Binding}">
+                                            <materialDesign:PackIcon Kind="Close"/>
+                                        </Button>
+                                    </materialDesign:Badged.Badge>
+                                    <Image MaxWidth="100" MaxHeight="100" Source="{Binding Content}" />
+                                </materialDesign:Badged>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label FontSize="16">Описание:</Label>
+                    <TextBox Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" Margin="8,10,0,15" Height="80" Width="500" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                             Padding="0,-5,0,0" materialDesign:HintAssist.IsFloating="False"  materialDesign:ValidationAssist.Background="Transparent">
+                        <TextBox.Text>
+                            <Binding Path="Description" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule></DataErrorValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label FontSize="16">Стартовая цена:</Label>
+                    <TextBox IsEnabled="{Binding IsAddMode, Mode=OneWay}" x:Name="StartValue" materialDesign:HintAssist.Hint="12,50" Width="150"
+                             materialDesign:ValidationAssist.Background="Transparent">
+                        <TextBox.Text>
+                            <Binding Path="StartBid" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule></DataErrorValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <Label Foreground="Gray" Padding="5,10,5,5">BYN</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <Label FontSize="16">Длительность торгов:</Label>
+                    <ComboBox IsEnabled="{Binding IsAddMode, Mode=OneWay}" materialDesign:HintAssist.Hint="Выбрать"  MinWidth="112" Margin="6,0,0,0" Background="#FFF3EAF9"
+                              ItemsSource="{Binding DaysCount}" DisplayMemberPath="Caption" materialDesign:ValidationAssist.Background="Transparent">
+                        <ComboBox.SelectedValue>
+                            <Binding Path="SelectedDaysCount">
+                                <Binding.ValidationRules>
+                                    <DataErrorValidationRule></DataErrorValidationRule>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </ComboBox.SelectedValue>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Grid.Row="2">
+        <Button x:Name="NewLotButton" HorizontalAlignment="Center" Width="150" VerticalAlignment="Bottom" Content="Подтвердить" 
+                Command="{Binding ConfirmCommand}" Margin="0,13,0,0"/>
+        <Button Style="{DynamicResource MaterialDesignFlatButton}"  Width="120" VerticalAlignment="Bottom" Content="Отменить"
+                Command="{Binding CancelCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

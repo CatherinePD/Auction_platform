@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Auction.Transitions.Slide3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Auction.Transitions"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Rectangle RadiusY="15" RadiusX="15" >
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="..\..\Images\istockphoto.jpg" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle RadiusY="25" RadiusX="25" Opacity="0.7" Fill="White" Margin="252,10,10,66"/>
+        <TextBlock Background="Transparent" Margin="279,21,34,74" Style="{DynamicResource MaterialDesignHeadlineTextBlock}" TextWrapping="Wrap"   FontSize="23" FontWeight="Bold"><Run Text="Если вы желаете отредактировать в своем аукционе какую-либо информацию, выберите его из списка ваших активных лотов и нажмите на кнопку 'Редактировать лот'. Кроме того, у вас есть возможность завершить торги до истечения заданной вами длительности торгов, если вас устраивает текущая цена. Просто нажмите кнопку 'Завершить лот' и его победителем станет тот, кто сделал последнюю ставку."/></TextBlock>
+        <Button Opacity="100" Style="{DynamicResource MaterialDesignFloatingActionMiniButton}" 
+                        Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}"
+                        VerticalAlignment="Center" HorizontalAlignment="Left" 
+                        Margin="41,191,0,179" Height="80" Width="79">
+            <Button.Background>
+                <ImageBrush  ImageSource="..\..\Images\arrow-back-icon.png" />
+            </Button.Background>
+        </Button>
+        <Button Opacity="100" Style="{DynamicResource MaterialDesignFloatingActionAccentButton}"                     
+                        Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"
+                        VerticalAlignment="Top"
+                        Margin="125,210,615,0" Height="61" Width="Auto">
+            <Button.Background>
+                <ImageBrush  ImageSource="..\..\Images\arrow-next-3-icon.png" />
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>

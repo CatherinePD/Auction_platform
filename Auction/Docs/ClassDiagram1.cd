@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Auction.AddLotWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAQAAAAAAEAAAAAAAAAAAAAAQBAAA=</HashCode>
+      <FileName>AddLotWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.App" Collapsed="true">
+    <Position X="14.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Info" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Info.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Login" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAEAAAAAAAAAAAEAAADAAA=</HashCode>
+      <FileName>Login.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQABABAAkAghIDEBoAQYwAABgQAQMoAgAAAEAAAOAAU=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Registration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAEAAAAAAAAAAAEAAABAAA=</HashCode>
+      <FileName>Registration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.UserWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAEAEAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>UserWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Common.BooleanMultiValueConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BooleanMultiValueConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Common.FormCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\FormCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Common.LotActionEventArgs" Collapsed="true">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Common\LotAddedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Common.Session" Collapsed="true">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAkAAAAAAAAAAAIAAAAAAAAAAAAAEAACAAAAAAA=</HashCode>
+      <FileName>Common\Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Common.SessionEventArgs" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Controls.BidHistory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\BidHistory.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Controls.CategoryList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\CategoryList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Controls.EmptyPlaceholder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\EmptyPlaceholder.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Controls.Lot" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAACAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Lot.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Controls.LotCard" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAEAEAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\LotCard.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Controls.LotList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYBCAEBAIAAAAAAAgAEAAAAgAQAAAAAAAAA=</HashCode>
+      <FileName>Controls\LotList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Controls.LotSelectEventArgs" Collapsed="true">
+    <Position X="7.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\LotList.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Services.CategoryService" Collapsed="true">
+    <Position X="15.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\CategoryService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Services.LotService" Collapsed="true">
+    <Position X="17" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACACAAAAFAIAAAAkAAAAAIAAAAAAAABICAAEAAAAAAA=</HashCode>
+      <FileName>Services\LotService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Services.NotificationService" Collapsed="true">
+    <Position X="15.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAEAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Services\NotificationService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Services.UserService" Collapsed="true">
+    <Position X="17" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAAgAAAAgAAABAAAgAAAAAgEAIAABAAAAA=</HashCode>
+      <FileName>Services\UserService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.Transitions.Slide1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transitions\Slide1.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Transitions.Slide2" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transitions\Slide2.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Transitions.Slide3" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transitions\Slide3.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Transitions.Slide4" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transitions\Slide4.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.Transitions.Slide5" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transitions\Slide5.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.DataAccess.AuctionContext" Collapsed="true">
+    <Position X="25.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.AuctionRepository&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27.5" Y="16.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Auction.DataAccess.ConnectionConstants" Collapsed="true">
+    <Position X="25.75" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.DatabaseInitializer" Collapsed="true">
+    <Position X="27.5" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.BaseEntity">
+    <Position X="12.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.Bid">
+    <Position X="10.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.Category">
+    <Position X="14.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.Contact">
+    <Position X="5.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.Lot">
+    <Position X="17" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.LotContent">
+    <Position X="8" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.Notification">
+    <Position X="12.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.Entities.User">
+    <Position X="19.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.DataAccess.UnitOfWork.AuctionUnitOfWork" Collapsed="true">
+    <Position X="30.5" Y="16.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Auction.Notification.DataNotificator" Collapsed="true">
+    <Position X="33.25" Y="16" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Auction.Notification.EventsModels.DataUpdatedEventArgs" Collapsed="true">
+    <Position X="35" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.Notification.EventsModels.NotificationData&lt;T&gt;" Collapsed="true">
+    <Position X="36.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Auction.ViewModels.AddLotViewModel">
+    <Position X="30.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddLotViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.BidHistoryViewModel">
+    <Position X="23.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>ViewModels\BidHistoryViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.CategoryListViewModel">
+    <Position X="28.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAIAEAAAAAAAAAABAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CategoryListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.DisplayLotViewModel">
+    <Position X="21.5" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EYBEjAggAIhgAcGHOBAAAQBAACQLoYAkAiAIBAMAEWQ=</HashCode>
+      <FileName>ViewModels\DisplayLotViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.LotDaysToExpire" Collapsed="true">
+    <Position X="35.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\LotFormViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.LotFormViewModel" Collapsed="true">
+    <Position X="31.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yACgBAJQApgwKWAECAAIAIAAAAABGABACAIgwAAAEEQ=</HashCode>
+      <FileName>ViewModels\LotFormViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.UpdateLotViewModel">
+    <Position X="32.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAABAAAAAAIAAAAAAAAAAAAAAAAAAgAAAAAAE=</HashCode>
+      <FileName>ViewModels\UpdateLotViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.UserProfileViewModel">
+    <Position X="26" Y="5.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>SAABIgAAQCjSIaAACBQAAAAAEEEQAoCiAAAUIEAUADE=</HashCode>
+      <FileName>ViewModels\UserProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Auction.ViewModels.ViewModelBase" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAKAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Auction.IAddEditView" Collapsed="true">
+    <Position X="12.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>AddLotWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Auction.IPasswordView" Collapsed="true">
+    <Position X="14.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Auction.Controls.ICategoryListView" Collapsed="true">
+    <Position X="7.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\CategoryList.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Auction.Controls.IDisplayLotView" Collapsed="true">
+    <Position X="9.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\Lot.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Auction.DataAccess.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="25.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Auction.DataAccess.UnitOfWork.IUnitOfWork" Collapsed="true">
+    <Position X="30.5" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Auction.Notification.IDataNotificator" Collapsed="true">
+    <Position X="33.25" Y="17.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Auction.Common.FormMode" Collapsed="true">
+    <Position X="4.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Common\FormMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Auction.DataAccess.Entities.EventSourceEnum" Collapsed="true">
+    <Position X="18.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Auction.Notification.EventsModels.ActionType" Collapsed="true">
+    <Position X="35" Y="17" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="Auction.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Auction"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d"
+        Height="400" Width="400" ResizeMode="NoResize"
+      Title="Login" WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="OnMouseLeftButtonDown">
+    <Grid>
+        <Rectangle RadiusY="15" RadiusX="15" >
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#E7CAE8" Offset="1"/>
+                    <GradientStop Color="#FF37295D"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button IsCancel="True" x:Name="ButtonClose" VerticalAlignment="Top" HorizontalAlignment="Right"  Foreground="White" Margin="0,15,19,0" Height="20" Width="20" Background="{x:Null}" BorderBrush="{x:Null}" Style="{StaticResource MaterialDesignFloatingActionAccentButton}" Click="buttonClose_Click">
+         <materialDesign:PackIcon Kind="Close"  />
+         </Button>
+        
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="White" Text="Вход в систему"  Margin="0,70,0,0" FontSize="33" FontFamily="MADE Evolve Sans EVO">
+            <TextBlock.Effect>
+                <DropShadowEffect ShadowDepth="5" Direction="330" Color="Black" Opacity="0.5" BlurRadius="6"/>
+            </TextBlock.Effect>
+          </TextBlock>
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,100">
+            <materialDesign:PackIcon Kind="Account" VerticalAlignment="Center" Foreground="White" Width="20" Height="20"/>
+            <TextBox x:Name="textBoxUserName" materialDesign:HintAssist.Hint="Логин" Foreground="White" Width="250" Margin="5,0,0,10" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,70,0,100">
+            <materialDesign:PackIcon Kind="Key" VerticalAlignment="Center" Foreground="White" Height="20" Width="20"/>
+            <PasswordBox x:Name="textBoxPassword" materialDesign:HintAssist.Hint="Пароль" Width="250" Foreground="White" Margin="5,0,0,10" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,60,0,0">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Foreground="White"><Run Text="У вас нет учетной записи? "/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap"  > <Hyperlink Click="Hyperlink_Click" Foreground="#FFEBCD"> <Run  Text="Создайте учетную запись!"/></Hyperlink></TextBlock>
+
+        </StackPanel>
+        <Button IsDefault="True" x:Name="buttonOk" Style="{StaticResource MaterialDesignRaisedButton}" Width="100" Margin="0,190,0,0" Click="ButtonOk_OnClick">Войти</Button>
+    </Grid>
+</Window>

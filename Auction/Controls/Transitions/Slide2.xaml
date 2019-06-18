@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="Auction.Transitions.Slide2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Auction.Transitions"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Rectangle RadiusY="15" RadiusX="15" >
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="..\..\Images\Auction-button.jpg" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle RadiusY="25" RadiusX="25" Opacity="0.7" Fill="White" Margin="36,10,36,166"/>
+        <TextBlock Background="Transparent" Margin="54,22,40,175" Style="{DynamicResource MaterialDesignHeadlineTextBlock}" TextWrapping="Wrap"   FontSize="23" FontWeight="Bold"><Run Text="Для создания аукциона вам необходимо ввести свои логин и пароль в окне входа в систему. Если вы еще не создавали учетную запись, необходимо зарегистрироваться! Затем добавить контактную информацию в вашем профиле, чтобы с вами смогли связаться после окончания торгов, нажать кнопочку 'Новый лот' и добавить всю заполнить все поля данными о товаре. Подтвердить создание лота и всё! Аукцион открыт и торги начаты!"/></TextBlock>
+
+        <Button Opacity="100" Height="Auto"  Width="Auto"   Style="{DynamicResource MaterialDesignFloatingActionMiniButton}" 
+                    Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}"
+                    Margin="536,335,200,55">
+            <Button.Background>
+                <ImageBrush  ImageSource="..\..\Images\arrow-back-icon.png" />
+            </Button.Background>
+        </Button>
+        <Button Opacity="100" Height="80"  Width="80"                     
+                    Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"
+                     Margin="605,315,115,55">
+            <Button.Background>
+                <ImageBrush  ImageSource="..\..\Images\arrow-next-3-icon.png" />
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>

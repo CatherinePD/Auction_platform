@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Auction.Controls.LotCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Auction.Controls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" d:DesignWidth="200">
+    <materialDesign:Card x:Name="_card" Width="200">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image x:Name="_image" Grid.Row="0" Width="100" Stretch="UniformToFill" />
+            <StackPanel Grid.Row="1">
+                <TextBlock x:Name="_title" FontWeight="Bold" MaxWidth="200"  Text="Cycling" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="_desc" TextWrapping="Wrap" MaxWidth="200" Text="A great way to keep fit and forget about the constant grind of IT." HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+    </materialDesign:Card>
+</UserControl>
